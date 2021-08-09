@@ -1,18 +1,18 @@
 <style>
   :root {
-
+    
     /* add code below */
-
+    
     /* add code above */
   }
-
-  /*body {
+  
+  body {
     background: var(--penguin-belly, #c6faf1);
-  }*/
-
+  }
+  
   .penguin {
     --penguin-skin: black;
-    --penguin-beak: black;
+    --penguin-beak: orange;
     position: relative;
     margin: auto;
     display: block;
@@ -20,7 +20,7 @@
     width: 300px;
     height: 300px;
   }
-
+  
   .right-cheek {
     top: 0%;
     left: 35%;
@@ -29,7 +29,7 @@
     height: 135px;
     border-radius: 70% 100% 70% 80%;
   }
-
+  
 .bottom-cheek {
     top: 7%;
     left: 17%;
@@ -47,39 +47,16 @@
     height: 135px;
     border-radius: 100% 70% 50% 70%;
   }
-
-
-  .right-ear {
-    bottom: 40%;
-      /* top: 0%; */
-      left: 8%;
-      background: var(--penguin-belly, black);
-      width: 80px;
-      height: 100px;
-      border-radius: 100% 100% 100% 100%;
-  }
-
-
-
-  .left-ear {
-    bottom: 40%;
-      /* top: 0%; */
-      left: 72%;
-      background: var(--penguin-belly, black);
-      width: 80px;
-      height: 100px;
-      border-radius: 100% 100% 100% 100%;
-  }
-
+  
   .belly {
     top: 60%;
-    left: 20%;
+    left: 2.5%;
     background: var(--penguin-belly, white);
     width: 95%;
     height: 100%;
-    border-radius: 100% 100% 100% 100%;
+    border-radius: 120% 120% 100% 100%;
   }
-
+  
   .penguin-top {
     top: 10%;
     left: 25%;
@@ -88,38 +65,38 @@
     height: 45%;
     border-radius: 70% 70% 70% 70%;
   }
-
+  
   .penguin-bottom {
     top: 40%;
-    left: 32.5%;
+    left: 23.5%;
     background: var(--penguin-skin, gray);
     width: 53%;
     height: 45%;
     border-radius: 70% 70% 100% 100%;
-}
-
+  }
+  
   .right-hand {
     top: 0%;
     left: -5%;
     background: var(--penguin-skin, gray);
     width: 30%;
-    height: 70%;
-    border-radius: 30% 30% 120% 70%;
+    height: 60%;
+    border-radius: 30% 30% 120% 30%;
     transform: rotate(45deg);
     z-index: -1;
   }
-
+  
   .left-hand {
     top: 0%;
     left: 75%;
     background: var(--penguin-skin, gray);
     width: 30%;
-    height: 70%;
-    border-radius: 30% 30% 70% 120%;
+    height: 60%;
+    border-radius: 30% 30% 30% 120%;
     transform: rotate(-45deg);
     z-index: -1;
   }
-
+  
   .right-feet {
     top: 85%;
     left: 60%;
@@ -130,7 +107,7 @@
     transform: rotate(-80deg);
     z-index: -2222;
   }
-
+  
   .left-feet {
     top: 85%;
     left: 25%;
@@ -141,25 +118,25 @@
     transform: rotate(80deg);
     z-index: -2222;
   }
-
+  
   .right-eye {
     top: 45%;
-    left: 85%;
+    left: 60%;
     background: black;
     width: 15%;
     height: 17%;
     border-radius: 50%;
   }
-
+  
   .left-eye {
     top: 45%;
-    left: 40%;
+    left: 25%;
     background: black;
     width: 15%;
     height: 17%;
     border-radius: 50%;
   }
-
+  
   .sparkle {
     top: 25%;
     left: 15%;
@@ -167,16 +144,8 @@
     width: 35%;
     height: 35%;
     border-radius: 50%;
-     position: relative;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: infinite;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-
   }
-
+  
   .blush-right {
     top: 65%;
     left: 15%;
@@ -185,7 +154,7 @@
     height: 10%;
     border-radius: 50%;
   }
-
+  
   .blush-left {
     top: 65%;
     left: 70%;
@@ -194,16 +163,16 @@
     height: 10%;
     border-radius: 50%;
   }
-
+  
   .beak-top {
     top: 60%;
-    left: 60%;
-    background: var(--penguin-beak, black);
+    left: 40%;
+    background: var(--penguin-beak, orange);
     width: 20%;
-    height: 12%;
+    height: 10%;
     border-radius: 50%;
   }
-
+  
   .beak-bottom {
     top: 65%;
     left: 42%;
@@ -212,78 +181,33 @@
     height: 10%;
     border-radius: 50%;
   }
-
- .mouth {
-    top: 70%;
-    left: 70%;
-    background: var(--penguin-beak, orange);
-    width: 1%;
-    height: 10%;
-    border-radius: 0%;
-  }
-  .mouth-left {
-    top: 80%;
-    left: 60%;
-    background: var(--penguin-beak, orange);
-    width: 10%;
-    height: 1%;
-    border-radius: 0%;
-  }
-  .mouth-right {
-    top: 80%;
-    left: 70%;
-    background: var(--penguin-beak, orange);
-    width: 10%;
-    height: 1%;
-    border-radius: 0%;
-  }
+  
   .penguin * {
     position: absolute;
   }
-
-
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-     0%   { left:0px; top:0px; }
-    25%  {left:10px; top:0px;}
-    50%  { left:10px; top:10px;}
-    75%  {left:0px; top:10px;}
-    100% { left:0px; top:0px;}
-}
-
-/* Standard syntax */
-@keyframes example {
-    0%   { left:0px; top:0px; }
-    25%  {left:10px; top:0px;}
-    50%  { left:10px; top:10px;}
-    75%  {left:0px; top:10px;}
-    100% { left:0px; top:0px;}
-}
-
 </style>
 <div class="penguin">
-   
+   <div class="penguin-bottom">
+    <div class="right-hand"></div>
+    <div class="left-hand"></div>
+    <div class="right-feet"></div>
+    <div class="left-feet"></div>
+  </div> 
   <div class="penguin-top">
-    <div class = "left-ear"></div>
-    <div class = "right-ear"></div>
     <div class="right-cheek"></div>
     <div class="bottom-cheek"></div>
-    <div class="left-cheek"></div>
-<!--       <div class="belly"></div>
- -->
+     <div class="left-cheek"></div>
+      <div class="belly"></div>
     <div class="right-eye">
       <div class="sparkle"></div>
     </div>
     <div class="left-eye">
       <div class="sparkle"></div>
     </div>
-   <!--  <div class="blush-right"></div>
-    <div class="blush-left"></div>-->
+    <div class="blush-right"></div>
+    <div class="blush-left"></div>
     <div class="beak-top"></div>
-    <div class="mouth"></div>
-    <div class = "mouth-left"></div>
-    <div class = "mouth-right"></div>
-<!--     <div class="beak-bottom"></div>   
- -->  </div>
+    <div class="beak-bottom"></div> 
+  </div>
+<div><p>hello</p></div>
 </div>
